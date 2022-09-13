@@ -24,13 +24,22 @@ struct ColorView: View {
     var body: some View {
         NavigationStack {
             VStack {
-                PersonalizedViewItem(colorView: color)
-                    .padding()
+                PersonalizedViewItem(colorView: color).padding(.bottom, 8)
                 SliderColorViewItem(sliderColor: .red)
                 SliderColorViewItem(sliderColor: .green)
                 SliderColorViewItem(sliderColor: .blue)
                     .alert("Wrong format", isPresented: $showAlert, actions: {})
-                
+                    .toolbar {
+                        ToolbarItemGroup(placement: .keyboard) {
+                            Button{} label: {
+                                Image(systemName: "chevron.up")
+                            }
+                            Button{} label: {
+                                Image(systemName: "chevron.down")
+                            }
+                            Button("Done", action: {})
+                        }
+                    }
                 Spacer()
             }
             .navigationTitle("Color View")
