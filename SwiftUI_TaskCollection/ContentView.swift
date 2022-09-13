@@ -8,14 +8,33 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    var HW = CollectionHW.trafficLight.rawValue
+    
+    
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+        NavigationStack {
+            List {
+                Section(
+                    header: Text("Finished Projects"),
+                    footer: Text("Projects completed as part of the training course 'iOS developer' from SwiftBook.")) {
+                    NavigationLink {
+                        TrafficLight()
+                    } label: {
+                        Image("TrafficLight")
+                        Text("Traffic Light")
+                    }
+                    NavigationLink {
+                        ColorView()
+                    } label: {
+                        Image("ColorView")
+                        Text("Color View")
+                    }
+                }
+            }
+            .navigationTitle("SwiftUI HW")
         }
-        .padding()
+        
     }
 }
 
