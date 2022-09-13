@@ -16,7 +16,7 @@ struct ColorCircleView: View {
             .frame(width: 150, height: 150)
             .foregroundColor(color)
             .opacity(opacity)
-            .overlay(Circle().stroke( Color.gray, lineWidth: 4))
+            .overlay(Circle().stroke(Color.gray, lineWidth: 4))
     }
 }
 

@@ -12,7 +12,13 @@ struct ColorView: View {
     var body: some View {
         NavigationStack {
             VStack {
-                SliderColorViewItem(colorTitle: "Red")
+                PersonalizedViewItem(colorView: .indigo)
+                    .padding()
+                SliderColorViewItem(sliderColor: .red)
+                SliderColorViewItem(sliderColor: .green)
+                SliderColorViewItem(sliderColor: .blue)
+                
+                Spacer()
             }
             .navigationTitle("Color View")
         }

@@ -8,13 +8,20 @@
 import SwiftUI
 
 struct PersonalizedViewItem: View {
+    
+    let colorView: Color
+    
     var body: some View {
-        RoundedRectangle(cornerRadius: 10)
+        RoundedRectangle(cornerRadius: 12)
+            .foregroundColor(colorView)
+            .frame(height: 140)
+            .overlay(RoundedRectangle(cornerRadius: 12).stroke(Color.gray, lineWidth: 4))
+
     }
 }
 
 struct PersonalizedView_Previews: PreviewProvider {
     static var previews: some View {
-        PersonalizedViewItem()
+        PersonalizedViewItem(colorView: .blue)
     }
 }
