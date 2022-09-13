@@ -1,5 +1,5 @@
 //
-//  SliderColorViewItem.swift
+//  SliderSelectionColorItem.swift
 //  SwiftUI_TaskCollection
 //
 //  Created by Алексей on 13.09.2022.
@@ -10,11 +10,11 @@
 
 import SwiftUI
 
-struct SliderColorViewItem: View {
+struct SliderSelectionColorItem: View {
     
     let sliderColor: Color
     
-    @State private var sliderValue = 0.5
+    @Binding var sliderValue: Double
     @State private var valueTF = ""
     
     var body: some View {
@@ -22,9 +22,19 @@ struct SliderColorViewItem: View {
             Text("0").foregroundColor(sliderColor)
             .font(.headline)
             Slider(value: $sliderValue, in: 0...255, step: 1)
+                .onChange(of: sliderValue, perform: { _ in
+                    valueTF = "\(lround(sliderValue))"
+                })
                 .accentColor(sliderColor)
             
             TextField("Value", text: $valueTF)
+                .onChange(of: valueTF, perform: { _ in
+                    guard let newValueTF = Double(valueTF) else {
+                        valueTF = ""
+                        return
+                    }
+                    checking(newValueTF)
+                })
                 .keyboardType(.phonePad)
                 .textFieldStyle(.roundedBorder)
                 .frame(width: 60)
@@ -36,10 +46,14 @@ struct SliderColorViewItem: View {
         .padding(.bottom, 8)
 
     }
-}
-
-struct SliderColorViewItem_Previews: PreviewProvider {
-    static var previews: some View {
-        SliderColorViewItem(sliderColor: .red)
+    
+    private func checking(_ value: Double) {
+        if value < 0 {
+            sliderValue = 0
+            } else if value > 255 {
+                sliderValue = 255
+            } else {
+                sliderValue = value
+            }
     }
 }
