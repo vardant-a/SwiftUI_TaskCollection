@@ -16,8 +16,9 @@
 		0E2E6AC128D0728B00BCFD6A /* ColorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E2E6AC028D0728B00BCFD6A /* ColorView.swift */; };
 		0E2E6AC328D07E4F00BCFD6A /* ColorCircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E2E6AC228D07E4F00BCFD6A /* ColorCircleView.swift */; };
 		0E2E6AC528D0810200BCFD6A /* ButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E2E6AC428D0810200BCFD6A /* ButtonView.swift */; };
-		0E2E6AC728D08CC900BCFD6A /* PersonalizedViewItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E2E6AC628D08CC900BCFD6A /* PersonalizedViewItem.swift */; };
+		0E2E6AC728D08CC900BCFD6A /* PersonalizedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E2E6AC628D08CC900BCFD6A /* PersonalizedView.swift */; };
 		0E2E6AC928D08EC800BCFD6A /* SliderSelectionColorItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E2E6AC828D08EC800BCFD6A /* SliderSelectionColorItem.swift */; };
+		0EC69CA728D1483500B255B9 /* TextFieldColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EC69CA628D1483500B255B9 /* TextFieldColor.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,8 +32,9 @@
 		0E2E6AC028D0728B00BCFD6A /* ColorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorView.swift; sourceTree = "<group>"; };
 		0E2E6AC228D07E4F00BCFD6A /* ColorCircleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorCircleView.swift; sourceTree = "<group>"; };
 		0E2E6AC428D0810200BCFD6A /* ButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonView.swift; sourceTree = "<group>"; };
-		0E2E6AC628D08CC900BCFD6A /* PersonalizedViewItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalizedViewItem.swift; sourceTree = "<group>"; };
+		0E2E6AC628D08CC900BCFD6A /* PersonalizedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalizedView.swift; sourceTree = "<group>"; };
 		0E2E6AC828D08EC800BCFD6A /* SliderSelectionColorItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SliderSelectionColorItem.swift; sourceTree = "<group>"; };
+		0EC69CA628D1483500B255B9 /* TextFieldColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldColor.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,10 +116,19 @@
 			isa = PBXGroup;
 			children = (
 				0E2E6AC028D0728B00BCFD6A /* ColorView.swift */,
-				0E2E6AC628D08CC900BCFD6A /* PersonalizedViewItem.swift */,
-				0E2E6AC828D08EC800BCFD6A /* SliderSelectionColorItem.swift */,
+				0EC69CA828D1485E00B255B9 /* ItemsView */,
 			);
 			path = "2. ColorizedApp";
+			sourceTree = "<group>";
+		};
+		0EC69CA828D1485E00B255B9 /* ItemsView */ = {
+			isa = PBXGroup;
+			children = (
+				0E2E6AC628D08CC900BCFD6A /* PersonalizedView.swift */,
+				0E2E6AC828D08EC800BCFD6A /* SliderSelectionColorItem.swift */,
+				0EC69CA628D1483500B255B9 /* TextFieldColor.swift */,
+			);
+			path = ItemsView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -191,11 +202,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				0E2E6AC328D07E4F00BCFD6A /* ColorCircleView.swift in Sources */,
+				0EC69CA728D1483500B255B9 /* TextFieldColor.swift in Sources */,
 				0E2E6ABE28D069B900BCFD6A /* TrafficLight.swift in Sources */,
 				0E2E6AC928D08EC800BCFD6A /* SliderSelectionColorItem.swift in Sources */,
 				0E2E6AAD28D0624500BCFD6A /* ContentView.swift in Sources */,
 				0E2E6AAB28D0624500BCFD6A /* SwiftUI_TaskCollectionApp.swift in Sources */,
-				0E2E6AC728D08CC900BCFD6A /* PersonalizedViewItem.swift in Sources */,
+				0E2E6AC728D08CC900BCFD6A /* PersonalizedView.swift in Sources */,
 				0E2E6ABC28D0682C00BCFD6A /* CollectionSwiftBook.swift in Sources */,
 				0E2E6AC128D0728B00BCFD6A /* ColorView.swift in Sources */,
 				0E2E6AC528D0810200BCFD6A /* ButtonView.swift in Sources */,

@@ -7,12 +7,13 @@
 
 import SwiftUI
 
-//enum FocusText {
-//    case
-//}
+enum FocusFiledColor {
+    case redColor, greenColor, blueColor
+}
 
 struct ColorView: View {
-//    @FocusState private var focusField: FocusText?
+    
+    @FocusState private var focusField: FocusFiledColor?
     
     @State private var showAlert = false
     
@@ -23,8 +24,9 @@ struct ColorView: View {
     var body: some View {
         NavigationStack {
             VStack {
-                PersonalizedViewItem(
-                    colorView: Color(
+                
+                PersonalizedView(
+                    color: Color(
                         red: redColor / 255,
                         green: greenColor / 255,
                         blue: blueColor / 255
@@ -32,36 +34,43 @@ struct ColorView: View {
                 )
                 .padding(.bottom, 8)
                 
-                SliderSelectionColorItem(
-                    sliderColor: .red,
-                    sliderValue: $redColor
-                )
-                SliderSelectionColorItem(
-                    sliderColor: .green,
-                    sliderValue: $greenColor
-                )
-                SliderSelectionColorItem(
-                    sliderColor: .blue,
-                    sliderValue: $blueColor
-                )
-                    .toolbar {
-                        ToolbarItemGroup(placement: .keyboard) {
-                            Button{} label: {
-                                Image(systemName: "chevron.up")
-                            }
-                            Button{} label: {
-                                Image(systemName: "chevron.down")
-                            }
-                            Button("Done", action: {
-                            })
-                                .alert("Wrong format", isPresented: $showAlert, actions: {
-                                })
-                        }
-                    }
-                Spacer()
+                HStack {
+                    SliderSelectionColorItem(
+                        sliderColor: .red,
+                        sliderValue: $redColor
+                    )
+                }
+                HStack {
+                    SliderSelectionColorItem(
+                        sliderColor: .green,
+                        sliderValue: $greenColor
+                    )
+                }
+                HStack {
+                    SliderSelectionColorItem(
+                        sliderColor: .blue,
+                        sliderValue: $blueColor
+                    )
+                }
             }
-            .padding()
             .navigationTitle("Color View")
+            .toolbar {
+                ToolbarItemGroup(placement: .keyboard) {
+                    Button{} label: {
+                        Image(systemName: "chevron.up")
+                    }
+                    Button{} label: {
+                        Image(systemName: "chevron.down")
+                    }
+                    Spacer()
+                    
+                    Button("Done", action: {
+                    })
+                        .alert("Wrong format", isPresented: $showAlert, actions: {
+                        })
+                }
+            }
+            Spacer()
         }
     }
 }
