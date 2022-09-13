@@ -8,8 +8,14 @@
 import SwiftUI
 
 struct ColorView: View {
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        NavigationStack {
+            VStack {
+                SliderColorViewItem(colorTitle: "Red")
+            }
+            .navigationTitle("Color View")
+        }
     }
 }
 

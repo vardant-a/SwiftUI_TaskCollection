@@ -28,7 +28,7 @@ struct ContentView: View {
                         ColorView()
                     } label: {
                         Image("ColorView")
-                        Text("Color View")
+                        Text("Colorized App")
                     }
                 }
             }
