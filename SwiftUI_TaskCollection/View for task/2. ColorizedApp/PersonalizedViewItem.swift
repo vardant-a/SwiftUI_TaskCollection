@@ -14,7 +14,7 @@ struct PersonalizedViewItem: View {
     var body: some View {
         RoundedRectangle(cornerRadius: 12)
             .foregroundColor(colorView)
-            .frame(height: 140)
+            .frame(height: 120)
             .overlay(RoundedRectangle(cornerRadius: 12).stroke(Color.gray, lineWidth: 4))
 
     }

@@ -9,8 +9,7 @@ import SwiftUI
 
 struct ContentView: View {
     
-    var HW = CollectionHW.trafficLight.rawValue
-    
+    var HW = [TrafficLight(), ColorView()] as [Any]
     
     var body: some View {
         NavigationStack {
@@ -24,6 +23,12 @@ struct ContentView: View {
                         Image("TrafficLight")
                         Text("Traffic Light")
                     }
+
+                }
+                
+                Section(
+                    header: Text("Projects for code review"),
+                    footer: Text("Projects that didn't pass the review. Are in work at the moment.")) {
                     NavigationLink {
                         ColorView()
                     } label: {
