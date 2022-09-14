@@ -23,7 +23,7 @@ struct ColorView: View {
     
     var body: some View {
         NavigationStack {
-            VStack {
+            VStack(spacing: 8) {
                 
                 PersonalizedView(
                     color: Color(
@@ -35,27 +35,22 @@ struct ColorView: View {
                 .padding(8)
                 HStack {
                     SliderSelectionColorItem(
-                        sliderColor: .red, value: $redColorValue
+                        color: .red, sliderValue: $redColorValue
                     )
-                    TextFieldColor(color: .red, value: $redColorValue)
                         .focused($focusFiled, equals: .redColor)
                 }
                 HStack {
                     SliderSelectionColorItem(
-                        sliderColor: .green, value: $greenColorValue
+                        color: .green, sliderValue: $greenColorValue
                     )
-                    TextFieldColor(color: .green, value: $greenColorValue)
                         .focused($focusFiled, equals: .greenColor)
                 }
                 HStack {
                     SliderSelectionColorItem(
-                        sliderColor: .blue, value: $blueColorValue
-                    )
-                    TextFieldColor(color: .blue, value: $blueColorValue)
+                        color: .blue, sliderValue: $blueColorValue)
                         .focused($focusFiled, equals: .blueColor)
                 }
             }
-            .padding()
             .navigationTitle("Color View")
             .toolbar(.hidden, for: .tabBar)
             .toolbar {
@@ -69,7 +64,9 @@ struct ColorView: View {
                     Spacer()
                     
                     Button("Done", action: cheack)
-                        .alert("Wrong format", isPresented: $showAlert, actions: {}) {Text("Please use numeric values ​​from 0 to 255")}
+                        .alert("Wrong format",
+                               isPresented: $showAlert,
+                               actions: {}) {Text("Please use numeric values ​​from 0 to 255")}
                 }
             }
             Spacer()
@@ -112,41 +109,5 @@ struct ColorView: View {
 struct ColorView_Previews: PreviewProvider {
     static var previews: some View {
         ColorView()
-    }
-}
-
-struct TextFieldColor: View {
-    
-    let color: Color
-    
-    @Binding var value: Double
-    
-    var body: some View {
-        TextField("Value", text: $value)
-            .onChange(of: value, perform: { _ in
-                guard let newValue = Double(value) else {
-                    value = ""
-                    return
-                }
-                checking(newValue)
-            })
-            .keyboardType(.phonePad)
-            .textFieldStyle(.roundedBorder)
-            .frame(width: 60)
-            .accentColor(color)
-            .overlay(RoundedRectangle(cornerRadius: 4).stroke(lineWidth: 3))
-            .foregroundColor(color)
-            .padding()
-    }
-    
-    
-    private func checking(_ value: Double) {
-        if value < 0 {
-            self.value = 0
-        } else if value > 255 {
-            self.value = 255
-        } else {
-            print("ищу")
-        }
     }
 }

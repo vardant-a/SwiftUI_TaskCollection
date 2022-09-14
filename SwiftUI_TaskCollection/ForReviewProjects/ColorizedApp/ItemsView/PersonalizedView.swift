@@ -14,7 +14,7 @@ struct PersonalizedView: View {
     var body: some View {
         RoundedRectangle(cornerRadius: 16)
             .foregroundColor(color)
-            .frame(maxWidth: .infinity, maxHeight: 150)
+            .frame(maxWidth: .infinity, maxHeight: 120)
             .overlay(RoundedRectangle(cornerRadius: 16).stroke(Color.gray.opacity(0.7), lineWidth: 4))
     }
 }
