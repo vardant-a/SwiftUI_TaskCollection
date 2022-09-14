@@ -23,16 +23,19 @@ struct SliderSelectionColorItem: View {
             Text("0").foregroundColor(color)
                 .font(.headline)
             Slider(value: $sliderValue, in: 0...255, step: 1)
+                .onChange(of: sliderValue) { _ in
+                    valueTF = "\(lround(sliderValue))"
+                }
                 .accentColor(color)
             
             TextField("Value", text: $valueTF)
-                .onChange(of: valueTF, perform: { _ in
+                .onChange(of: valueTF) { _ in
                     guard let newValue = Double(valueTF) else {
                         valueTF = ""
                         return
                     }
                     checking(newValue)
-                })
+                }
                 .keyboardType(.phonePad)
                 .textFieldStyle(.roundedBorder)
                 .frame(width: 60)
