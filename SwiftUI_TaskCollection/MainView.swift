@@ -15,7 +15,7 @@ struct MainView: View {
                 FinishedProjectsList()
                 ForReviewProjectsList()
             }
-            .navigationTitle("SwiftUI HW")
+            .navigationTitle("Homework collection")
         }
         
     }

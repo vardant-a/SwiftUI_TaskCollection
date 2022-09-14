@@ -12,10 +12,10 @@ struct PersonalizedView: View {
     let color: Color
     
     var body: some View {
-        RoundedRectangle(cornerRadius: 12)
+        RoundedRectangle(cornerRadius: 16)
             .foregroundColor(color)
-            .frame(maxWidth: .infinity, maxHeight: 140)
-            .overlay(RoundedRectangle(cornerRadius: 12).stroke(Color.gray.opacity(0.7), lineWidth: 4))
+            .frame(maxWidth: .infinity, maxHeight: 150)
+            .overlay(RoundedRectangle(cornerRadius: 16).stroke(Color.gray.opacity(0.7), lineWidth: 4))
     }
 }
 

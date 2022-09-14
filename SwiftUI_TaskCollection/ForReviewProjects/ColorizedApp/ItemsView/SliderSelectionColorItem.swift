@@ -11,20 +11,16 @@
 import SwiftUI
 
 struct SliderSelectionColorItem: View {
-    
+   
     let sliderColor: Color
     
-    @Binding var sliderValue: Double
-    @State private var valueTF = ""
+    @Binding var value: Double
     
     var body: some View {
         HStack {
             Text("0").foregroundColor(sliderColor)
             .font(.headline)
-            Slider(value: $sliderValue, in: 0...255, step: 1)
-                .onChange(of: sliderValue, perform: { _ in
-                    valueTF = "\(lround(sliderValue))"
-                })
+            Slider(value: $value, in: 0...255, step: 1)
                 .accentColor(sliderColor)
         }
         .padding(.bottom, 8)
