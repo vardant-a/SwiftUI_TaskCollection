@@ -54,6 +54,7 @@ struct ColorView: View {
                 }
             }
             .navigationTitle("Color View")
+            .toolbar(.hidden, for: .tabBar)
             .toolbar {
                 ToolbarItemGroup(placement: .keyboard) {
                     Button{} label: {
