@@ -8,10 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		0E2E6AAB28D0624500BCFD6A /* SwiftUI_TaskCollectionApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E2E6AAA28D0624500BCFD6A /* SwiftUI_TaskCollectionApp.swift */; };
-		0E2E6AAD28D0624500BCFD6A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E2E6AAC28D0624500BCFD6A /* ContentView.swift */; };
+		0E2E6AAD28D0624500BCFD6A /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E2E6AAC28D0624500BCFD6A /* MainView.swift */; };
 		0E2E6AAF28D0624600BCFD6A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0E2E6AAE28D0624600BCFD6A /* Assets.xcassets */; };
 		0E2E6AB228D0624600BCFD6A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0E2E6AB128D0624600BCFD6A /* Preview Assets.xcassets */; };
-		0E2E6ABC28D0682C00BCFD6A /* CollectionSwiftBook.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E2E6ABB28D0682C00BCFD6A /* CollectionSwiftBook.swift */; };
 		0E2E6ABE28D069B900BCFD6A /* TrafficLight.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E2E6ABD28D069B900BCFD6A /* TrafficLight.swift */; };
 		0E2E6AC128D0728B00BCFD6A /* ColorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E2E6AC028D0728B00BCFD6A /* ColorView.swift */; };
 		0E2E6AC328D07E4F00BCFD6A /* ColorCircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E2E6AC228D07E4F00BCFD6A /* ColorCircleView.swift */; };
@@ -19,15 +18,18 @@
 		0E2E6AC728D08CC900BCFD6A /* PersonalizedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E2E6AC628D08CC900BCFD6A /* PersonalizedView.swift */; };
 		0E2E6AC928D08EC800BCFD6A /* SliderSelectionColorItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E2E6AC828D08EC800BCFD6A /* SliderSelectionColorItem.swift */; };
 		0EC69CA728D1483500B255B9 /* TextFieldColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EC69CA628D1483500B255B9 /* TextFieldColor.swift */; };
+		0EC69CAB28D152A000B255B9 /* FinishedProjectsList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EC69CAA28D152A000B255B9 /* FinishedProjectsList.swift */; };
+		0EC69CAE28D1537000B255B9 /* MainTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EC69CAD28D1537000B255B9 /* MainTabBar.swift */; };
+		0EC69CB028D154DF00B255B9 /* InfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EC69CAF28D154DF00B255B9 /* InfoView.swift */; };
+		0EC69CB228D155D700B255B9 /* ForReviewProjectsList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EC69CB128D155D700B255B9 /* ForReviewProjectsList.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		0E2E6AA728D0624500BCFD6A /* SwiftUI_TaskCollection.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUI_TaskCollection.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0E2E6AAA28D0624500BCFD6A /* SwiftUI_TaskCollectionApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUI_TaskCollectionApp.swift; sourceTree = "<group>"; };
-		0E2E6AAC28D0624500BCFD6A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		0E2E6AAC28D0624500BCFD6A /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		0E2E6AAE28D0624600BCFD6A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0E2E6AB128D0624600BCFD6A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		0E2E6ABB28D0682C00BCFD6A /* CollectionSwiftBook.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionSwiftBook.swift; sourceTree = "<group>"; };
 		0E2E6ABD28D069B900BCFD6A /* TrafficLight.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrafficLight.swift; sourceTree = "<group>"; };
 		0E2E6AC028D0728B00BCFD6A /* ColorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorView.swift; sourceTree = "<group>"; };
 		0E2E6AC228D07E4F00BCFD6A /* ColorCircleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorCircleView.swift; sourceTree = "<group>"; };
@@ -35,6 +37,10 @@
 		0E2E6AC628D08CC900BCFD6A /* PersonalizedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalizedView.swift; sourceTree = "<group>"; };
 		0E2E6AC828D08EC800BCFD6A /* SliderSelectionColorItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SliderSelectionColorItem.swift; sourceTree = "<group>"; };
 		0EC69CA628D1483500B255B9 /* TextFieldColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldColor.swift; sourceTree = "<group>"; };
+		0EC69CAA28D152A000B255B9 /* FinishedProjectsList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinishedProjectsList.swift; sourceTree = "<group>"; };
+		0EC69CAD28D1537000B255B9 /* MainTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBar.swift; sourceTree = "<group>"; };
+		0EC69CAF28D154DF00B255B9 /* InfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoView.swift; sourceTree = "<group>"; };
+		0EC69CB128D155D700B255B9 /* ForReviewProjectsList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForReviewProjectsList.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,9 +74,11 @@
 			isa = PBXGroup;
 			children = (
 				0E2E6AAA28D0624500BCFD6A /* SwiftUI_TaskCollectionApp.swift */,
-				0E2E6AAC28D0624500BCFD6A /* ContentView.swift */,
-				0E2E6AB828D065D100BCFD6A /* Models */,
-				0E2E6ABA28D0680100BCFD6A /* View for task */,
+				0EC69CAD28D1537000B255B9 /* MainTabBar.swift */,
+				0EC69CAF28D154DF00B255B9 /* InfoView.swift */,
+				0E2E6AAC28D0624500BCFD6A /* MainView.swift */,
+				0E2E6ABA28D0680100BCFD6A /* FinishedProjects */,
+				0EC69CAC28D152DE00B255B9 /* ForReviewProjects */,
 				0E2E6AAE28D0624600BCFD6A /* Assets.xcassets */,
 				0E2E6AB028D0624600BCFD6A /* Preview Content */,
 			);
@@ -85,40 +93,31 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
-		0E2E6AB828D065D100BCFD6A /* Models */ = {
-			isa = PBXGroup;
-			children = (
-				0E2E6ABB28D0682C00BCFD6A /* CollectionSwiftBook.swift */,
-			);
-			path = Models;
-			sourceTree = "<group>";
-		};
-		0E2E6AB928D065E400BCFD6A /* 1. TrafficLight */ = {
+		0E2E6AB928D065E400BCFD6A /* TrafficLight */ = {
 			isa = PBXGroup;
 			children = (
 				0E2E6ABD28D069B900BCFD6A /* TrafficLight.swift */,
-				0E2E6AC228D07E4F00BCFD6A /* ColorCircleView.swift */,
-				0E2E6AC428D0810200BCFD6A /* ButtonView.swift */,
+				0EC69CA928D1516200B255B9 /* ItemsView */,
 			);
-			path = "1. TrafficLight";
+			path = TrafficLight;
 			sourceTree = "<group>";
 		};
-		0E2E6ABA28D0680100BCFD6A /* View for task */ = {
+		0E2E6ABA28D0680100BCFD6A /* FinishedProjects */ = {
 			isa = PBXGroup;
 			children = (
-				0E2E6AB928D065E400BCFD6A /* 1. TrafficLight */,
-				0E2E6ABF28D0726700BCFD6A /* 2. ColorizedApp */,
+				0EC69CAA28D152A000B255B9 /* FinishedProjectsList.swift */,
+				0E2E6AB928D065E400BCFD6A /* TrafficLight */,
 			);
-			path = "View for task";
+			path = FinishedProjects;
 			sourceTree = "<group>";
 		};
-		0E2E6ABF28D0726700BCFD6A /* 2. ColorizedApp */ = {
+		0E2E6ABF28D0726700BCFD6A /* ColorizedApp */ = {
 			isa = PBXGroup;
 			children = (
 				0E2E6AC028D0728B00BCFD6A /* ColorView.swift */,
 				0EC69CA828D1485E00B255B9 /* ItemsView */,
 			);
-			path = "2. ColorizedApp";
+			path = ColorizedApp;
 			sourceTree = "<group>";
 		};
 		0EC69CA828D1485E00B255B9 /* ItemsView */ = {
@@ -129,6 +128,24 @@
 				0EC69CA628D1483500B255B9 /* TextFieldColor.swift */,
 			);
 			path = ItemsView;
+			sourceTree = "<group>";
+		};
+		0EC69CA928D1516200B255B9 /* ItemsView */ = {
+			isa = PBXGroup;
+			children = (
+				0E2E6AC428D0810200BCFD6A /* ButtonView.swift */,
+				0E2E6AC228D07E4F00BCFD6A /* ColorCircleView.swift */,
+			);
+			path = ItemsView;
+			sourceTree = "<group>";
+		};
+		0EC69CAC28D152DE00B255B9 /* ForReviewProjects */ = {
+			isa = PBXGroup;
+			children = (
+				0EC69CB128D155D700B255B9 /* ForReviewProjectsList.swift */,
+				0E2E6ABF28D0726700BCFD6A /* ColorizedApp */,
+			);
+			path = ForReviewProjects;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -202,15 +219,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				0E2E6AC328D07E4F00BCFD6A /* ColorCircleView.swift in Sources */,
+				0EC69CAE28D1537000B255B9 /* MainTabBar.swift in Sources */,
 				0EC69CA728D1483500B255B9 /* TextFieldColor.swift in Sources */,
 				0E2E6ABE28D069B900BCFD6A /* TrafficLight.swift in Sources */,
+				0EC69CB028D154DF00B255B9 /* InfoView.swift in Sources */,
 				0E2E6AC928D08EC800BCFD6A /* SliderSelectionColorItem.swift in Sources */,
-				0E2E6AAD28D0624500BCFD6A /* ContentView.swift in Sources */,
+				0E2E6AAD28D0624500BCFD6A /* MainView.swift in Sources */,
 				0E2E6AAB28D0624500BCFD6A /* SwiftUI_TaskCollectionApp.swift in Sources */,
 				0E2E6AC728D08CC900BCFD6A /* PersonalizedView.swift in Sources */,
-				0E2E6ABC28D0682C00BCFD6A /* CollectionSwiftBook.swift in Sources */,
 				0E2E6AC128D0728B00BCFD6A /* ColorView.swift in Sources */,
 				0E2E6AC528D0810200BCFD6A /* ButtonView.swift in Sources */,
+				0EC69CB228D155D700B255B9 /* ForReviewProjectsList.swift in Sources */,
+				0EC69CAB28D152A000B255B9 /* FinishedProjectsList.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
