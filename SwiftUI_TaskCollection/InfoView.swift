@@ -8,6 +8,9 @@
 import SwiftUI
 
 struct InfoView: View {
+    
+    @Environment(\.presentationMode) var presentationMode
+    
     var body: some View {
         NavigationStack {
             VStack {
@@ -29,6 +32,18 @@ struct InfoView: View {
             }
             .padding()
             .navigationTitle("Information")
+            .toolbar {
+                ToolbarItem(placement: .cancellationAction) {
+                    Button {
+                        self.presentationMode.wrappedValue.dismiss()
+                    } label: {
+                        Image(systemName: "chevron.backward")
+                        Text("Back")
+                    }
+                    
+                }
+
+            }
             Spacer()
         }
         

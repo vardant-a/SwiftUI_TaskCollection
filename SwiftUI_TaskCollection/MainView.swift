@@ -9,6 +9,8 @@ import SwiftUI
 
 struct MainView: View {
     
+    @State private var isShowInfoView = false
+    
     var body: some View {
         NavigationStack {
             List {
@@ -16,6 +18,16 @@ struct MainView: View {
                 ForReviewProjectsList()
             }
             .navigationTitle("Homework collection")
+            .toolbar {
+                ToolbarItem(placement: .navigationBarTrailing) {
+                    Button { isShowInfoView.toggle() } label: {
+                        Image(systemName: "info.circle")
+                    }
+                }
+            }
+            .fullScreenCover(isPresented: $isShowInfoView) {
+                InfoView()
+            }
         }
         
     }
