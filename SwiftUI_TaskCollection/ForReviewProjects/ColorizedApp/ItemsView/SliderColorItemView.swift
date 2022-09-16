@@ -20,6 +20,7 @@ struct SliderColorItemView: View {
     var body: some View {
         HStack {
             Text("0")
+                .font(.headline)
                 .foregroundColor(color)
             Slider(value: $value, in: 0...255, step: 1)
                 .tint(color)

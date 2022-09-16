@@ -17,28 +17,36 @@ struct ColorView: View {
     
     var body: some View {
         NavigationStack {
-            VStack {
-                ColorItemView(red: red, green: green, blue: blue)
+            ZStack {
+                Color(.black)
+                    .ignoresSafeArea()
+                    .onTapGesture {
+                        isInputActive = false
+                    }
                 
-                VStack {
-                    SliderColorItemView(value: $red, color: .red)
-                    SliderColorItemView(value: $green, color: .green)
-                    SliderColorItemView(value: $blue, color: .blue)
-                }
-                .frame(width: 150)
-                .focused($isInputActive)
-                .navigationTitle("Colorized App")
-                .toolbar {
-                    ToolbarItemGroup(placement: .keyboard) {
-                        Spacer()
-                        Button("Done") {
-                            isInputActive = false
+                VStack(spacing: 40) {
+                    ColorItemView(red: red, green: green, blue: blue)
+                    
+                    VStack {
+                        SliderColorItemView(value: $red, color: .red)
+                        SliderColorItemView(value: $green, color: .green)
+                        SliderColorItemView(value: $blue, color: .blue)
+                    }
+                    .frame(width: 150)
+                    .focused($isInputActive)
+                    .toolbar {
+                        ToolbarItemGroup(placement: .keyboard) {
+                            Spacer()
+                            Button("Done") {
+                                isInputActive = false
+                            }
                         }
                     }
+                    Spacer()
                 }
+                .navigationTitle("Colorized App")
+                .padding()
             }
-            .padding()
-            Spacer()
         }
     }
 }
