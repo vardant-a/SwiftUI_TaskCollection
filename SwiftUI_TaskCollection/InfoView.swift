@@ -26,7 +26,7 @@ struct InfoView: View {
                 
                 Spacer()
                 
-                Text("Version Application 0.1.1")
+                Text("Version Application 0.1.4")
                     .foregroundColor(.gray)
             }
             .padding(.vertical, 150)

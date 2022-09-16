@@ -18,6 +18,12 @@ struct FinishedProjectsList: View {
                 Image("TrafficLight")
                 Text("Traffic Light")
             }
+            NavigationLink {
+                ColorView()
+            } label: {
+                Image("ColorView")
+                Text("Colorized App")
+            }
         }
     }
 }

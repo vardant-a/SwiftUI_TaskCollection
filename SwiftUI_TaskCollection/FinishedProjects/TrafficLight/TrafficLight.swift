@@ -46,7 +46,6 @@ struct TrafficLight: View {
                     }
                 }
                 .navigationTitle("Traffic Light")
-                .toolbar(.hidden, for: .tabBar)
             }
         }
     }

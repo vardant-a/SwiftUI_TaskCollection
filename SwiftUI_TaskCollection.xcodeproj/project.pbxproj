@@ -22,6 +22,7 @@
 		0EC69CAE28D1537000B255B9 /* MainTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EC69CAD28D1537000B255B9 /* MainTabBar.swift */; };
 		0EC69CB028D154DF00B255B9 /* InfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EC69CAF28D154DF00B255B9 /* InfoView.swift */; };
 		0EC69CB228D155D700B255B9 /* ForReviewProjectsList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EC69CB128D155D700B255B9 /* ForReviewProjectsList.swift */; };
+		0EFD037028D5119E00AE31FA /* NewProject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EFD036F28D5119E00AE31FA /* NewProject.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,6 +42,7 @@
 		0EC69CAD28D1537000B255B9 /* MainTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBar.swift; sourceTree = "<group>"; };
 		0EC69CAF28D154DF00B255B9 /* InfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoView.swift; sourceTree = "<group>"; };
 		0EC69CB128D155D700B255B9 /* ForReviewProjectsList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForReviewProjectsList.swift; sourceTree = "<group>"; };
+		0EFD036F28D5119E00AE31FA /* NewProject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewProject.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +109,7 @@
 			children = (
 				0EC69CAA28D152A000B255B9 /* FinishedProjectsList.swift */,
 				0E2E6AB928D065E400BCFD6A /* TrafficLight */,
+				0E2E6ABF28D0726700BCFD6A /* ColorizedApp */,
 			);
 			path = FinishedProjects;
 			sourceTree = "<group>";
@@ -143,9 +146,17 @@
 			isa = PBXGroup;
 			children = (
 				0EC69CB128D155D700B255B9 /* ForReviewProjectsList.swift */,
-				0E2E6ABF28D0726700BCFD6A /* ColorizedApp */,
+				0EFD036E28D5118800AE31FA /* NewProject */,
 			);
 			path = ForReviewProjects;
+			sourceTree = "<group>";
+		};
+		0EFD036E28D5118800AE31FA /* NewProject */ = {
+			isa = PBXGroup;
+			children = (
+				0EFD036F28D5119E00AE31FA /* NewProject.swift */,
+			);
+			path = NewProject;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -220,6 +231,7 @@
 			files = (
 				0E2E6AC328D07E4F00BCFD6A /* ColorCircleView.swift in Sources */,
 				0EC69CAE28D1537000B255B9 /* MainTabBar.swift in Sources */,
+				0EFD037028D5119E00AE31FA /* NewProject.swift in Sources */,
 				0E2E6ABE28D069B900BCFD6A /* TrafficLight.swift in Sources */,
 				0E35760B28D4F9DE00C7E43E /* TextFieldColorItemView.swift in Sources */,
 				0EC69CB028D154DF00B255B9 /* InfoView.swift in Sources */,
@@ -371,12 +383,15 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 0.1.4;
 				PRODUCT_BUNDLE_IDENTIFIER = "Vardant-Coding.SwiftUI-TaskCollection";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -400,12 +415,15 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 0.1.4;
 				PRODUCT_BUNDLE_IDENTIFIER = "Vardant-Coding.SwiftUI-TaskCollection";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
