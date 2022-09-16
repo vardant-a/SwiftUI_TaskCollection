@@ -15,8 +15,9 @@
 		0E2E6AC128D0728B00BCFD6A /* ColorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E2E6AC028D0728B00BCFD6A /* ColorView.swift */; };
 		0E2E6AC328D07E4F00BCFD6A /* ColorCircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E2E6AC228D07E4F00BCFD6A /* ColorCircleView.swift */; };
 		0E2E6AC528D0810200BCFD6A /* ButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E2E6AC428D0810200BCFD6A /* ButtonView.swift */; };
-		0E2E6AC728D08CC900BCFD6A /* PersonalizedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E2E6AC628D08CC900BCFD6A /* PersonalizedView.swift */; };
-		0E2E6AC928D08EC800BCFD6A /* SliderSelectionColorItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E2E6AC828D08EC800BCFD6A /* SliderSelectionColorItem.swift */; };
+		0E2E6AC728D08CC900BCFD6A /* ColorItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E2E6AC628D08CC900BCFD6A /* ColorItemView.swift */; };
+		0E2E6AC928D08EC800BCFD6A /* SliderColorItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E2E6AC828D08EC800BCFD6A /* SliderColorItemView.swift */; };
+		0E35760B28D4F9DE00C7E43E /* TextFieldColorItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E35760A28D4F9DE00C7E43E /* TextFieldColorItemView.swift */; };
 		0EC69CAB28D152A000B255B9 /* FinishedProjectsList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EC69CAA28D152A000B255B9 /* FinishedProjectsList.swift */; };
 		0EC69CAE28D1537000B255B9 /* MainTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EC69CAD28D1537000B255B9 /* MainTabBar.swift */; };
 		0EC69CB028D154DF00B255B9 /* InfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EC69CAF28D154DF00B255B9 /* InfoView.swift */; };
@@ -33,8 +34,9 @@
 		0E2E6AC028D0728B00BCFD6A /* ColorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorView.swift; sourceTree = "<group>"; };
 		0E2E6AC228D07E4F00BCFD6A /* ColorCircleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorCircleView.swift; sourceTree = "<group>"; };
 		0E2E6AC428D0810200BCFD6A /* ButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonView.swift; sourceTree = "<group>"; };
-		0E2E6AC628D08CC900BCFD6A /* PersonalizedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalizedView.swift; sourceTree = "<group>"; };
-		0E2E6AC828D08EC800BCFD6A /* SliderSelectionColorItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SliderSelectionColorItem.swift; sourceTree = "<group>"; };
+		0E2E6AC628D08CC900BCFD6A /* ColorItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorItemView.swift; sourceTree = "<group>"; };
+		0E2E6AC828D08EC800BCFD6A /* SliderColorItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SliderColorItemView.swift; sourceTree = "<group>"; };
+		0E35760A28D4F9DE00C7E43E /* TextFieldColorItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldColorItemView.swift; sourceTree = "<group>"; };
 		0EC69CAA28D152A000B255B9 /* FinishedProjectsList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinishedProjectsList.swift; sourceTree = "<group>"; };
 		0EC69CAD28D1537000B255B9 /* MainTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBar.swift; sourceTree = "<group>"; };
 		0EC69CAF28D154DF00B255B9 /* InfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoView.swift; sourceTree = "<group>"; };
@@ -121,8 +123,9 @@
 		0EC69CA828D1485E00B255B9 /* ItemsView */ = {
 			isa = PBXGroup;
 			children = (
-				0E2E6AC628D08CC900BCFD6A /* PersonalizedView.swift */,
-				0E2E6AC828D08EC800BCFD6A /* SliderSelectionColorItem.swift */,
+				0E2E6AC628D08CC900BCFD6A /* ColorItemView.swift */,
+				0E2E6AC828D08EC800BCFD6A /* SliderColorItemView.swift */,
+				0E35760A28D4F9DE00C7E43E /* TextFieldColorItemView.swift */,
 			);
 			path = ItemsView;
 			sourceTree = "<group>";
@@ -218,11 +221,12 @@
 				0E2E6AC328D07E4F00BCFD6A /* ColorCircleView.swift in Sources */,
 				0EC69CAE28D1537000B255B9 /* MainTabBar.swift in Sources */,
 				0E2E6ABE28D069B900BCFD6A /* TrafficLight.swift in Sources */,
+				0E35760B28D4F9DE00C7E43E /* TextFieldColorItemView.swift in Sources */,
 				0EC69CB028D154DF00B255B9 /* InfoView.swift in Sources */,
-				0E2E6AC928D08EC800BCFD6A /* SliderSelectionColorItem.swift in Sources */,
+				0E2E6AC928D08EC800BCFD6A /* SliderColorItemView.swift in Sources */,
 				0E2E6AAD28D0624500BCFD6A /* MainView.swift in Sources */,
 				0E2E6AAB28D0624500BCFD6A /* SwiftUI_TaskCollectionApp.swift in Sources */,
-				0E2E6AC728D08CC900BCFD6A /* PersonalizedView.swift in Sources */,
+				0E2E6AC728D08CC900BCFD6A /* ColorItemView.swift in Sources */,
 				0E2E6AC128D0728B00BCFD6A /* ColorView.swift in Sources */,
 				0E2E6AC528D0810200BCFD6A /* ButtonView.swift in Sources */,
 				0EC69CB228D155D700B255B9 /* ForReviewProjectsList.swift in Sources */,
