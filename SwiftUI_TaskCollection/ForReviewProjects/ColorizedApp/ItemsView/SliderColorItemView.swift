@@ -22,7 +22,9 @@ struct SliderColorItemView: View {
             Text("0")
                 .font(.headline)
                 .foregroundColor(color)
+                .frame(width: 40)
             Slider(value: $value, in: 0...255, step: 1)
+                .frame(width: 260)
                 .tint(color)
                 .onChange(of: value) { newValue in
                     valueTF = newValue.formatted()
