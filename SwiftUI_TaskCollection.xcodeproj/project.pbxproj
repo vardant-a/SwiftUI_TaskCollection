@@ -18,6 +18,7 @@
 		0E2E6AC728D08CC900BCFD6A /* ColorItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E2E6AC628D08CC900BCFD6A /* ColorItemView.swift */; };
 		0E2E6AC928D08EC800BCFD6A /* SliderColorItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E2E6AC828D08EC800BCFD6A /* SliderColorItemView.swift */; };
 		0E35760B28D4F9DE00C7E43E /* TextFieldColorItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E35760A28D4F9DE00C7E43E /* TextFieldColorItemView.swift */; };
+		0E470A5728D5B026005B215F /* TimeCounter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E470A5628D5B026005B215F /* TimeCounter.swift */; };
 		0EC69CAB28D152A000B255B9 /* FinishedProjectsList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EC69CAA28D152A000B255B9 /* FinishedProjectsList.swift */; };
 		0EC69CAE28D1537000B255B9 /* MainTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EC69CAD28D1537000B255B9 /* MainTabBar.swift */; };
 		0EC69CB028D154DF00B255B9 /* InfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EC69CAF28D154DF00B255B9 /* InfoView.swift */; };
@@ -38,6 +39,7 @@
 		0E2E6AC628D08CC900BCFD6A /* ColorItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorItemView.swift; sourceTree = "<group>"; };
 		0E2E6AC828D08EC800BCFD6A /* SliderColorItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SliderColorItemView.swift; sourceTree = "<group>"; };
 		0E35760A28D4F9DE00C7E43E /* TextFieldColorItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldColorItemView.swift; sourceTree = "<group>"; };
+		0E470A5628D5B026005B215F /* TimeCounter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeCounter.swift; sourceTree = "<group>"; };
 		0EC69CAA28D152A000B255B9 /* FinishedProjectsList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinishedProjectsList.swift; sourceTree = "<group>"; };
 		0EC69CAD28D1537000B255B9 /* MainTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBar.swift; sourceTree = "<group>"; };
 		0EC69CAF28D154DF00B255B9 /* InfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoView.swift; sourceTree = "<group>"; };
@@ -76,9 +78,9 @@
 			isa = PBXGroup;
 			children = (
 				0E2E6AAA28D0624500BCFD6A /* SwiftUI_TaskCollectionApp.swift */,
-				0EC69CAD28D1537000B255B9 /* MainTabBar.swift */,
-				0EC69CAF28D154DF00B255B9 /* InfoView.swift */,
 				0E2E6AAC28D0624500BCFD6A /* MainView.swift */,
+				0EC69CAF28D154DF00B255B9 /* InfoView.swift */,
+				0EC69CAD28D1537000B255B9 /* MainTabBar.swift */,
 				0E2E6ABA28D0680100BCFD6A /* FinishedProjects */,
 				0EC69CAC28D152DE00B255B9 /* ForReviewProjects */,
 				0E2E6AAE28D0624600BCFD6A /* Assets.xcassets */,
@@ -155,6 +157,7 @@
 			isa = PBXGroup;
 			children = (
 				0EFD036F28D5119E00AE31FA /* NewProject.swift */,
+				0E470A5628D5B026005B215F /* TimeCounter.swift */,
 			);
 			path = NewProject;
 			sourceTree = "<group>";
@@ -232,6 +235,7 @@
 				0E2E6AC328D07E4F00BCFD6A /* ColorCircleView.swift in Sources */,
 				0EC69CAE28D1537000B255B9 /* MainTabBar.swift in Sources */,
 				0EFD037028D5119E00AE31FA /* NewProject.swift in Sources */,
+				0E470A5728D5B026005B215F /* TimeCounter.swift in Sources */,
 				0E2E6ABE28D069B900BCFD6A /* TrafficLight.swift in Sources */,
 				0E35760B28D4F9DE00C7E43E /* TextFieldColorItemView.swift in Sources */,
 				0EC69CB028D154DF00B255B9 /* InfoView.swift in Sources */,
