@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct ForReviewProjectsList: View {
-    
+    @StateObject private var userManager = UserManager()
     @State private var viewProject = [1]
     
     var body: some View {
@@ -19,7 +19,9 @@ struct ForReviewProjectsList: View {
             if viewProject.isEmpty {
                 Text("No active project")
             } else {
-                NavigationLink { NewProject() } label: {
+                NavigationLink {
+                    StarterView()
+                } label: {
                     Text("New Project")
                 }
             }

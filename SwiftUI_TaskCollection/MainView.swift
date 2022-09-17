@@ -8,7 +8,6 @@
 import SwiftUI
 
 struct MainView: View {
-    
     @State private var isShowInfoView = false
     
     var body: some View {

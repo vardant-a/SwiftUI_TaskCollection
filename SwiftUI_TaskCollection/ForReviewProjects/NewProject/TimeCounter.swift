@@ -2,7 +2,7 @@
 //  TimeCounter.swift
 //  SwiftUI_TaskCollection
 //
-//  Created by Алексей on 17.09.2022.
+//  Created by Алексей on 16.09.2022.
 //
 
 import Foundation

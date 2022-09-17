@@ -19,6 +19,9 @@
 		0E2E6AC928D08EC800BCFD6A /* SliderColorItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E2E6AC828D08EC800BCFD6A /* SliderColorItemView.swift */; };
 		0E35760B28D4F9DE00C7E43E /* TextFieldColorItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E35760A28D4F9DE00C7E43E /* TextFieldColorItemView.swift */; };
 		0E470A5728D5B026005B215F /* TimeCounter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E470A5628D5B026005B215F /* TimeCounter.swift */; };
+		0E470A5928D5B8AA005B215F /* RegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E470A5828D5B8AA005B215F /* RegisterView.swift */; };
+		0E470A5B28D5BA25005B215F /* UserManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E470A5A28D5BA25005B215F /* UserManager.swift */; };
+		0E470A5D28D5BD12005B215F /* StarterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E470A5C28D5BD12005B215F /* StarterView.swift */; };
 		0EC69CAB28D152A000B255B9 /* FinishedProjectsList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EC69CAA28D152A000B255B9 /* FinishedProjectsList.swift */; };
 		0EC69CAE28D1537000B255B9 /* MainTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EC69CAD28D1537000B255B9 /* MainTabBar.swift */; };
 		0EC69CB028D154DF00B255B9 /* InfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EC69CAF28D154DF00B255B9 /* InfoView.swift */; };
@@ -40,6 +43,9 @@
 		0E2E6AC828D08EC800BCFD6A /* SliderColorItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SliderColorItemView.swift; sourceTree = "<group>"; };
 		0E35760A28D4F9DE00C7E43E /* TextFieldColorItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldColorItemView.swift; sourceTree = "<group>"; };
 		0E470A5628D5B026005B215F /* TimeCounter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeCounter.swift; sourceTree = "<group>"; };
+		0E470A5828D5B8AA005B215F /* RegisterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterView.swift; sourceTree = "<group>"; };
+		0E470A5A28D5BA25005B215F /* UserManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserManager.swift; sourceTree = "<group>"; };
+		0E470A5C28D5BD12005B215F /* StarterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarterView.swift; sourceTree = "<group>"; };
 		0EC69CAA28D152A000B255B9 /* FinishedProjectsList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinishedProjectsList.swift; sourceTree = "<group>"; };
 		0EC69CAD28D1537000B255B9 /* MainTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBar.swift; sourceTree = "<group>"; };
 		0EC69CAF28D154DF00B255B9 /* InfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoView.swift; sourceTree = "<group>"; };
@@ -97,32 +103,32 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
-		0E2E6AB928D065E400BCFD6A /* TrafficLight */ = {
+		0E2E6AB928D065E400BCFD6A /* 1. TrafficLight */ = {
 			isa = PBXGroup;
 			children = (
 				0E2E6ABD28D069B900BCFD6A /* TrafficLight.swift */,
 				0EC69CA928D1516200B255B9 /* ItemsView */,
 			);
-			path = TrafficLight;
+			path = "1. TrafficLight";
 			sourceTree = "<group>";
 		};
 		0E2E6ABA28D0680100BCFD6A /* FinishedProjects */ = {
 			isa = PBXGroup;
 			children = (
 				0EC69CAA28D152A000B255B9 /* FinishedProjectsList.swift */,
-				0E2E6AB928D065E400BCFD6A /* TrafficLight */,
-				0E2E6ABF28D0726700BCFD6A /* ColorizedApp */,
+				0E2E6AB928D065E400BCFD6A /* 1. TrafficLight */,
+				0E2E6ABF28D0726700BCFD6A /* 2. ColorizedApp */,
 			);
 			path = FinishedProjects;
 			sourceTree = "<group>";
 		};
-		0E2E6ABF28D0726700BCFD6A /* ColorizedApp */ = {
+		0E2E6ABF28D0726700BCFD6A /* 2. ColorizedApp */ = {
 			isa = PBXGroup;
 			children = (
 				0E2E6AC028D0728B00BCFD6A /* ColorView.swift */,
 				0EC69CA828D1485E00B255B9 /* ItemsView */,
 			);
-			path = ColorizedApp;
+			path = "2. ColorizedApp";
 			sourceTree = "<group>";
 		};
 		0EC69CA828D1485E00B255B9 /* ItemsView */ = {
@@ -158,6 +164,9 @@
 			children = (
 				0EFD036F28D5119E00AE31FA /* NewProject.swift */,
 				0E470A5628D5B026005B215F /* TimeCounter.swift */,
+				0E470A5828D5B8AA005B215F /* RegisterView.swift */,
+				0E470A5A28D5BA25005B215F /* UserManager.swift */,
+				0E470A5C28D5BD12005B215F /* StarterView.swift */,
 			);
 			path = NewProject;
 			sourceTree = "<group>";
@@ -244,9 +253,12 @@
 				0E2E6AAB28D0624500BCFD6A /* SwiftUI_TaskCollectionApp.swift in Sources */,
 				0E2E6AC728D08CC900BCFD6A /* ColorItemView.swift in Sources */,
 				0E2E6AC128D0728B00BCFD6A /* ColorView.swift in Sources */,
+				0E470A5D28D5BD12005B215F /* StarterView.swift in Sources */,
 				0E2E6AC528D0810200BCFD6A /* ButtonView.swift in Sources */,
+				0E470A5928D5B8AA005B215F /* RegisterView.swift in Sources */,
 				0EC69CB228D155D700B255B9 /* ForReviewProjectsList.swift in Sources */,
 				0EC69CAB28D152A000B255B9 /* FinishedProjectsList.swift in Sources */,
+				0E470A5B28D5BA25005B215F /* UserManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
